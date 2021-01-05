@@ -1,0 +1,275 @@
+/* ==UserStyle==
+@name Jisho DeepDark
+@namespace gitlab.com/RaitaroH/Jisho-DeepDark
+@homepageURL https://gitlab.com/RaitaroH/Jisho-DeepDark
+@version 1.0.8
+@updateURL https://gitlab.com/RaitaroH/Jisho-DeepDark/raw/master/JishoDeepDark.user.css
+@description Learn japanese in the dark. May the dark be kinder on thine eyes. (jisho dark theme)
+@author RaitaroH
+@license GNU-V3.0
+==/UserStyle== */
+
+
+
+
+/* 
+ __     __     __  __     __  __     ______     ______                                                                           
+/\ \  _ \ \   /\ \_\ \   /\ \/ /    /\  __ \   /\  == \                                                                          
+\ \ \/ ".\ \  \ \____ \  \ \  _"-.  \ \ \/\ \  \ \  _-/                                                                          
+ \ \__/".~\_\  \/\_____\  \ \_\ \_\  \ \_____\  \ \_\                                                                            
+  \/_/   \/_/   \/_____/   \/_/\/_/   \/_____/   \/_/                                                                            
+                                                                                                                                 
+ ______   ______                                                                                                                 
+/\__  _\ /\  __ \                                                                                                                
+\/_/\ \/ \ \ \/\ \                                                                                                               
+   \ \_\  \ \_____\                                                                                                              
+    \/_/   \/_____/                                                                                                              
+                                                                                                                                 
+ ______     ______     __     ______     __  __                                                                                  
+/\  ___\   /\  ___\   /\ \   /\  ___\   /\ \/ /                                                                                  
+\ \___  \  \ \ \____  \ \ \  \ \  __\   \ \  _"-.                                                                                
+ \/\_____\  \ \_____\  \ \_\  \ \_____\  \ \_\ \_\                                                                               
+  \/_____/   \/_____/   \/_/   \/_____/   \/_/\/_/                                                                               
+                                                                                                                                 
+*/                                                                                                                          
+
+
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("lurker") {
+/* 
+ __     __     __  __     __  __     ______     ______                                                                           
+/\ \  _ \ \   /\ \_\ \   /\ \/ /    /\  __ \   /\  == \                                                                          
+\ \ \/ ".\ \  \ \____ \  \ \  _"-.  \ \ \/\ \  \ \  _-/                                                                          
+ \ \__/".~\_\  \/\_____\  \ \_\ \_\  \ \_____\  \ \_\                                                                            
+  \/_/   \/_/   \/_____/   \/_/\/_/   \/_____/   \/_/                                                                            
+                                                                                                                                 
+ ______   ______                                                                                                                 
+/\__  _\ /\  __ \                                                                                                                
+\/_/\ \/ \ \ \/\ \                                                                                                               
+   \ \_\  \ \_____\                                                                                                              
+    \/_/   \/_____/                                                                                                              
+                                                                                                                                 
+ ______     ______     __     ______     __  __                                                                                  
+/\  ___\   /\  ___\   /\ \   /\  ___\   /\ \/ /                                                                                  
+\ \___  \  \ \ \____  \ \ \  \ \  __\   \ \  _"-.                                                                                
+ \/\_____\  \ \_____\  \ \_\  \ \_____\  \ \_\ \_\                                                                               
+  \/_____/   \/_____/   \/_/   \/_____/   \/_/\/_/                                                                               
+                                                                                                                                 
+ __  __     ______     ______     ______   ______     ______     ______     ______     __  __       __     __   __     __  __    
+/\ \/ /    /\  __ \   /\  == \   /\  == \ /\  __ \   /\  == \   /\  __ \   /\  ___\   /\ \_\ \     /\ \   /\ "-.\ \   /\ \_\ \   
+\ \  _"-.  \ \ \/\ \  \ \  __<   \ \  _-/ \ \ \/\ \  \ \  __<   \ \  __ \  \ \ \____  \ \____ \   _\_\ \  \ \ \-.  \  \ \____ \  
+ \ \_\ \_\  \ \_____\  \ \_\ \_\  \ \_\    \ \_____\  \ \_\ \_\  \ \_\ \_\  \ \_____\  \/\_____\ /\_____\  \ \_\\"\_\  \/\_____\ 
+  \/_/\/_/   \/_____/   \/_/ /_/   \/_/     \/_____/   \/_/ /_/   \/_/\/_/   \/_____/   \/_____/ \/_____/   \/_/ \/_/   \/_____/ 
+                                                                                                                                 */                                                                                                                          
+
+
+@namespace url(http://www.w3.org/1999/xhtml);
+
+/* kolor głownejgo backgroundu - ciemniejszy jest lepszy bardziej czytelny tak to wszystko się rozmywa poszczególne boxy */
+body {
+     background-color: #ecf0f1 !important;   
+}
+
+/* kolor navbara */
+.uk-navbar-container.navbar, #app nav.uk-navbar {
+  background-color: #4383af !important;
+}
+
+
+/* wypierddala ten glupi loader na początku */
+body > #loader {
+    display: none !important;
+}
+
+/* Firefox poprawa zjebanego koloru scrollera */
+html {
+ scrollbar-color: initial !important   
+}
+
+/* Jak mnie wkurwiają te pierdolnięte notyfikację które zasłaniają mi treśc */
+.uk-notification {
+  right: -139px !important;
+    top: 13px  !important;
+    border-radius: 2px !important;
+}
+.uk-notification .uk-notification-message {
+    padding: 5px;
+    background-color: #2c6db0;
+    color: #f5f5f5;
+    width: 204px;
+    font-size: 13px !important;
+}
+
+/* navbar linki prawo */
+.uk-navbar-container .uk-navbar-right ul  li a {
+  color: #FFF;   
+}
+/* navbar dropdown */
+.uk-navbar-container .uk-navbar-right .dropdown {
+    padding: 10px !important; 
+    font-size: 13px;
+    font-weight: bold;
+    top: 54px !important
+}
+.uk-navbar-container .uk-navbar-right .dropdown  li a {
+   color: #4383af !important;
+    width: 100%; /* to poprawia klikalnośc bo wtedy sam text jest tylko do klikięcia */
+}
+.uk-navbar-container .uk-navbar-right .dropdown  li a:hover {
+   color: #34495e !important;
+}
+.uk-navbar-container .uk-navbar-right .dropdown  li svg {
+   transform: scale(0.8);
+}
+.uk-navbar-container .uk-navbar-right .uk-nav-divider  {
+    margin-bottom: 3px;
+    margin-top: 3px !important;
+}
+
+/* NAVIGACJA */
+#app .uk-container-xlarge .uk-width-xxlarge .uk-grid-collapse.uk-flex-stretch.uk-flex-center {
+  position: fixed;
+    top:12px;
+    z-index: 100;
+    left: 173px;                                        
+}
+/* color buttona  */
+#app .uk-container-xlarge .uk-width-xxlarge .uk-grid-collapse.uk-flex-stretch.uk-flex-center button:not(.active){
+   background: rgb(67 131 175)  !important;
+   color: white;
+}
+#app .uk-container-xlarge .uk-width-xxlarge .uk-grid-collapse.uk-flex-stretch.uk-flex-center button.active {
+  background: #2a6393 !important;
+    color: white;
+}
+
+#app .uk-container-xlarge .uk-width-xxlarge .uk-grid-collapse.uk-flex-stretch.uk-flex-center .uk-margin-small-bottom {
+  border: 1px solid #2a6393;
+    border-radius: 7px;  
+    
+}
+/* nie wiem głupie to powoduje ruszanie się buttonów przy active */
+.uk-button-group>.uk-button:nth-child(n+2), .uk-button-group>div:nth-child(n+2) .uk-button {
+  margin-left: 0 !important
+}
+
+/* poprawa spacera dla 
+uk-margin-auto uk-margin-bottom
+   
+*/
+
+
+/* sidebra 
+bo nie ma jak dostać się do np. opcji moderacji dostaje komunikat i nie wiem o co kaman
+*/
+.uk-container-xlarge .uk-flex-center .sticky.uk-flex-first {
+    max-height: initial !important;
+    margin-top: 13px !important;                                      
+}
+
+/* News page */
+
+/* wielkosc kontenera newsowego */
+#app .miniature + div {
+  padding: 10px !important;
+}
+/* zmienia wielkośc minaturki */
+#app .miniature img.miniature  {
+    padding: 20px;
+}
+
+#app .miniature + div h3 {
+  font-size: 1em !important;
+}
+#app .miniature + div .avatar {
+  max-width: 22px
+}
+
+/* na HUJ kurwa mac dawać pełne zdjęcie marnowanie mniejsca chesz zobaczyc całośc kliknij, proste nie */
+#app .post-content .uk-margin-top img {
+  max-width: 280px !important   
+}
+
+/* hack bo sie zdjęcia pierdolą nie ma to jak dynamiczne selecotry */
+#app .post-content img.avatar {
+  max-width: 36px !important   
+}
+
+/* czytanie artykułu */
+#mainModal {
+    transition: none !important;
+    max-width: initial !important;
+}
+
+#mainModal {
+  /*left: 0 !important ;*/ /* pelnyekran */
+    top: 64px;
+    left: 480px !important;
+}
+#mainModal + div div.uk-grid.uk-padding {
+  max-width: 443px
+}
+
+/* stylowanie grafiki gdy jest na pełnym ekranie */
+
+#mainModal + div .miniature {
+        max-width: 100px;
+}
+#mainModal + div .miniature img {
+  height: initial !important ;
+    padding: 12px !important ;
+        max-width: 100px;
+}
+/* głupie efekt po najcheaniu */
+#mainModal + div .miniature a:hover {
+  transition: none !important;
+    opacity: 1 !important
+}
+
+/* usówa linki z posta po co do cholery linki która są jescze raz w treści */
+article.post-body + div.uk-margin a.tdn.card-link.uk-grid {
+  display: none !important   
+}
+
+/* RESET OKROPNEGO SCROLLBARA DLA CHROME */
+
+/*Scroll bar nav
+::-webkit-scrollbar {
+    width: auto;
+}
+
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: initial !important;
+    border-radius:  initial !important;
+    background:  initial !important;
+    -webkit-box-shadow: initial !important;
+    box-shadow: initial !important;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background: initial !important;
+}
+
+::-webkit-scrollbar-track {
+   -webkit-box-shadow: 0;
+    box-shadow: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}*/
+
+/* zmiana loga */
+.uk-navbar-container .uk-navbar-left  li img[alt="Logo Lurker.pl"] {
+    visibility: hidden
+}
+
+.uk-navbar-container .uk-navbar-left li a  {
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+DQo8c3ZnDQogICB4bWxuczp4PSJhZG9iZTpuczptZXRhLyINCiAgIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyINCiAgIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiDQogICB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiDQogICB4bWxuczpzdmc9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIg0KICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIg0KICAgaWQ9InN2ZzkiDQogICB2ZXJzaW9uPSIxLjEiDQogICB2aWV3Qm94PSIwIDAgNjg2IDE0MiINCiAgIGhlaWdodD0iMTQyIg0KICAgd2lkdGg9IjY4NiI+DQogIDxtZXRhZGF0YQ0KICAgICBpZD0ibWV0YWRhdGEyIj4NCiAgICAgIDx4OnhtcG1ldGENCiAgICAgICB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjYtYzE0MiA3OS4xNjA5MjQsIDIwMTcvMDcvMTMtMDE6MDY6MzkgICAgICAgICI+DQogICAgICA8bWV0YWRhdGE+DQogICAgICAgIDxyZGY6UkRGPg0KICAgICAgICAgIDxyZGY6RGVzY3JpcHRpb24NCiAgICAgICAgICAgICByZGY6YWJvdXQ9IiIgLz4NCiAgICAgICAgICA8Y2M6V29yaw0KICAgICAgICAgICAgIHJkZjphYm91dD0iIj4NCiAgICAgICAgICAgIDxkYzpmb3JtYXQ+aW1hZ2Uvc3ZnK3htbDwvZGM6Zm9ybWF0Pg0KICAgICAgICAgICAgPGRjOnR5cGUNCiAgICAgICAgICAgICAgIHJkZjpyZXNvdXJjZT0iaHR0cDovL3B1cmwub3JnL2RjL2RjbWl0eXBlL1N0aWxsSW1hZ2UiIC8+DQogICAgICAgICAgICA8ZGM6dGl0bGU+PC9kYzp0aXRsZT4NCiAgICAgICAgICA8L2NjOldvcms+DQogICAgICAgIDwvcmRmOlJERj4NCiAgICAgIDwvbWV0YWRhdGE+DQogICAgPC94OnhtcG1ldGE+DQo8P3hwYWNrZXQgZW5kPSJ3Ij8+ICA8L21ldGFkYXRhPg0KICA8ZGVmcw0KICAgICBpZD0iZGVmczYiPg0KICAgIDxzdHlsZQ0KICAgICAgIGlkPSJzdHlsZTQiPg0KICAgICAgLmNscy0xIHsNCiAgICAgICAgZmlsbC1ydWxlOiBldmVub2RkOw0KICAgICAgfQ0KICAgIDwvc3R5bGU+DQogIDwvZGVmcz4NCiAgPHBhdGgNCiAgICAgc3R5bGU9ImZpbGw6I0ZGRkZGRjtmaWxsLW9wYWNpdHk6MSINCiAgICAgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIxMSAtNTIpIg0KICAgICBkPSJNMzUwLjA1NSwxMjkuOTUzbDAuMjM4LTQ4LjgzNi0yNi40ODEsMTMuNjFWNjkuMTA4TDM1OS41LDUyLjAyOWwxMC41LDg4LjYtNDcuMjM4LDIzLjQ4NEwzMDkuMTE1LDE5NGwtMTMuNjQ2LTM2LjI5M20wLDEuMDY3LDU0LjU4Ni0yNy43NTRtLTEzLjY0Ny0yNi42ODYtMjAuOTk0LDEwLjY3NEwzMDUuNCwxMzcuMDIxbDMxLjAwNy0xNS42MDhWMTA0LjMzNFpNMjMwLjksMTI5Ljk0bC0wLjIzNy00OC44NDYsMjYuNDE3LDEzLjYxM1Y2OS4wODNMMjIxLjQ3Miw1MiwyMTEsMTQwLjYxN2w0Ny4xMjMsMjMuNDg4TDI3MS43MzYsMTk0bDEzLjYxMy0zNi4zbTAsMS4wNjhMMjMwLjksMTMxLjAwOG0xMy42MTMtMjYuNjkyLDIwLjk0NCwxMC42NzcsOS45ODgsMjIuMDE3TDI0NC41MDksMTIxLjRWMTA0LjMxNlptMzguNiw4LjYwOVY1OC43MTloMTQuNzh2NTQuMjA2SDI4My4xMVptMTUxLjg5NSw1NC45Vjc2Ljk3NWgtMTl2OTAuODQ3aDE5Wm01Ni4zNjctNjMuMjcyVjEzOS42cTAsNi4zMTctMy40NiwxMC4xODFhMTEuNTE1LDExLjUxNSwwLDAsMS05LDMuODY0cS00Ljc4NCwwLTcuMTA5LTIuN3QtMi4zMjctOC4zNzZWMTA0LjU1aC0xOXYzNy42MjhxMCwxMy40MDYsNS43MjYsMjAuMDM5dDE3LjQyNSw2LjYzNmEyMS44MDYsMjEuODA2LDAsMCwwLDEwLjYzMi0yLjU3OSwxOS43NDYsMTkuNzQ2LDAsMCwwLDcuNjEyLTcuNDcydjkuMDJoMTguNVYxMDQuNTVoLTE5Wm03Ny44ODEtMS42NzUtNS41MzYuMzg4cS0xNC42LDEuMDMyLTE5LjI1LDExLjk4M3YtMTAuN0g1MjYuMjIzdjYzLjI3MmgxOVYxMzQuODMzcTAtNi4zMTQsMy4yNzItMTAuMTE3dDExLjItNC41NzNsMTAuNjk0LTEuMTZabTQ3LjE4MSwzMS45NTgsMjUuOTE5LTMwLjE1NEg2MTkuNzA1bC0yMi43NzMsMjYuOTMyVjc2Ljk3NWgtMTl2OTAuODQ3aDE5VjEzOS42bDIzLjY1NCwyOC4yMjFoMjMuMjc3Wm04Ny45NDksMC4yNTdxMC0xNC44MTQtNy42MTItMjMuNDUyVDY3Ni4yLDEwM2EyOS43NywyOS43NywwLDAsMC0xNS43MjcsNC4xODksMjguOTg1LDI4Ljk4NSwwLDAsMC0xMC44MiwxMS42NjEsMzYuNSwzNi41LDAsMCwwLTMuOSwxNy4xMzlxMCwxNS4yMDYsOSwyNC4wMzN0MjQuNiw4LjgyN2E0Mi44NDYsNDIuODQ2LDAsMCwwLDEzLjAyMi0yLjA2MSwzNC4wNjMsMzQuMDYzLDAsMCwwLDExLjAxLTUuNjdsLTUuMDM0LTEzLjAxNmEzMC4zMzUsMzAuMzM1LDAsMCwxLTguNjE5LDQuNTc1LDI5LjIyNywyOS4yMjcsMCwwLDEtOS41LDEuNjFxLTcuMywwLTExLjI2Mi0zLjQxNXQtNC44NDQtMTEuMDE4aDQwLjI2MlYxMzUuMDlaTTY3Ni43LDExNi40MDZxNS40MDksMCw4LjM2NywzLjQ3OXQzLjMzNCwxMC4zMDlINjY0LjEyMXEwLjc1NS02LjcsMy45NjMtMTAuMjQ2YTExLjA2MSwxMS4wNjEsMCwwLDEsOC42MTktMy41NDJoMFptODMuNDE4LTEzLjUzMS01LjUzNi4zODhxLTE0LjYsMS4wMzItMTkuMjUxLDExLjk4M3YtMTAuN0g3MTcuMDl2NjMuMjcyaDE5VjEzNC44MzNxMC02LjMxNCwzLjI3MS0xMC4xMTd0MTEuMi00LjU3M2wxMC42OTQtMS4xNlptNC40LDY0Ljk0N2gyMC4zODRWMTQ3LjJINzY0LjUyM3YyMC42MTlaTTgzNy44NzYsMTAzYTI0LjA3NCwyNC4wNzQsMCwwLDAtMTEuNTc2LDIuNzcyLDE5LjQ1MywxOS40NTMsMCwwLDAtNy45MjcsNy42NjdWMTA0LjU1SDc5OS42MjZ2ODYuNDY3aDE5VjE1OC44YTE4LjkyNiwxOC45MjYsMCwwLDAsNy44NjQsNy40MDgsMjQuMzc3LDI0LjM3NywwLDAsMCwxMS4zODcsMi42NDMsMjUuNTQ5LDI1LjU0OSwwLDAsMCwxNC4yMTctNCwyNi41NjcsMjYuNTY3LDAsMCwwLDkuNjI1LTExLjQsNDAuMjYxLDQwLjI2MSwwLDAsMCwzLjQ2MS0xNy4yLDQxLjE0Niw0MS4xNDYsMCwwLDAtMy40NjEtMTcuMzMxLDI3LjYyNCwyNy42MjQsMCwwLDAtOS42ODctMTEuNzI2QTI0Ljc4MiwyNC43ODIsMCwwLDAsODM3Ljg3NiwxMDNoMFptLTUuNTM2LDUxLjAzcS02LjY3MiwwLTEwLjMxNy00Ljd0LTMuNjUtMTMuMzM3cTAtOC43NjMsMy42NS0xMy40NjZ0MTAuMzE3LTQuN2ExMi4xNjksMTIuMTY5LDAsMCwxLDEwLjMxNyw0LjgzNHEzLjY0OCw0LjgyOSwzLjY0OCwxMy41OTMsMCw4LjYzNi0zLjY0OCwxMy4yMDd0LTEwLjMxNyw0LjU3N2gwWm02NC42NywxMy43ODhWNzYuOTc1aC0xOXY5MC44NDdoMTlaIg0KICAgICBjbGFzcz0iY2xzLTEiDQogICAgIGlkPSJsdXJrZXIucGwiIC8+DQo8L3N2Zz4NCg==");
+    background-repeat: no-repeat;
+background-size: 130px;
+background-position: 12px;
+
+}
+
+}
