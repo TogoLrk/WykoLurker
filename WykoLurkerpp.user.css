@@ -33,9 +33,7 @@
                                                                                                                                  
 */                                                                                                                          
                                                                                                                        
-
-
-@namespace url(http://www.w3.org/1999/xhtml);
+@-moz-document domain("www.lurker.pl") {
 
 /* kolor głownejgo backgroundu - ciemniejszy jest lepszy bardziej czytelny tak to wszystko się rozmywa poszczególne boxy */
 body {
