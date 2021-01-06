@@ -1,0 +1,45 @@
+/* ==UserStyle==
+@name Lurker Wywala Sidebara
+@namespace github.com/Usernameisalreadytaken5/WykoLurker
+@homepageURL https://github.com/Usernameisalreadytaken5/WykoLurker
+@version 0.0.2
+@updateURL https://raw.githubusercontent.com/Usernameisalreadytaken5/WykoLurker/main/WykoLurker_remove_sidebar.user.css
+@description WykoLurker wywala sidebara
+@author THE://
+@license MIT
+==/UserStyle== */
+
+
+/* 
+ __     __     __  __     __  __     ______     ______                                                                           
+/\ \  _ \ \   /\ \_\ \   /\ \/ /    /\  __ \   /\  == \                                                                          
+\ \ \/ ".\ \  \ \____ \  \ \  _"-.  \ \ \/\ \  \ \  _-/                                                                          
+ \ \__/".~\_\  \/\_____\  \ \_\ \_\  \ \_____\  \ \_\                                                                            
+  \/_/   \/_/   \/_____/   \/_/\/_/   \/_____/   \/_/                                                                            
+                                                                                                                                 
+ ______   ______                                                                                                                 
+/\__  _\ /\  __ \                                                                                                                
+\/_/\ \/ \ \ \/\ \                                                                                                               
+   \ \_\  \ \_____\                                                                                                              
+    \/_/   \/_____/                                                                                                              
+                                                                                                                                 
+ ______     ______     __     ______     __  __                                                                                  
+/\  ___\   /\  ___\   /\ \   /\  ___\   /\ \/ /                                                                                  
+\ \___  \  \ \ \____  \ \ \  \ \  __\   \ \  _"-.                                                                                
+ \/\_____\  \ \_____\  \ \_\  \ \_____\  \ \_\ \_\                                                                               
+  \/_____/   \/_____/   \/_/   \/_____/   \/_/\/_/                                                                               
+                                                                                                                                 
+*/                                                                                                                          
+                                                                                                                       
+@-moz-document domain("www.lurker.pl") {
+  /* ukrywa sidebara */
+  .uk-container-xlarge .uk-flex-center .sticky.uk-flex-first {
+      display: none                                   
+  }
+
+  /* treśc była 750x dałem na 1000px */
+  .uk-width-xxlarge {
+      width: 1000px !important
+  }
+
+}
