@@ -294,5 +294,11 @@ body.theme-dark a.interactive {
 body.theme-dark .post-body a {
   color: #6390bd; 
 }
+ body.theme-dark .uk-navbar-container .uk-navbar-right .dropdown li a {
+  color: #ccc !important;
+}
+body.theme-dark .uk-navbar-container .uk-navbar-right .dropdown li a:hover {
+    color: #524d4d !important;
+}
 
 }
