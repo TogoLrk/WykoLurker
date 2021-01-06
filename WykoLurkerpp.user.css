@@ -1,8 +1,8 @@
 /* ==UserStyle==
-@name WykoLurker #000;
+@name WykoLurker
 @namespace github.com/Usernameisalreadytaken5/WykoLurker
 @homepageURL https://github.com/Usernameisalreadytaken5/WykoLurker
-@version 0.0.2
+@version 0.0.3
 @updateURL https://raw.githubusercontent.com/Usernameisalreadytaken5/WykoLurker/main/WykoLurkerpp.user.css
 @description WykoLurker zmiana stylu na bardziej kompaktowy
 @author THE://
@@ -237,6 +237,62 @@ article.post-body + div.uk-margin a.tdn.card-link.uk-grid {
 background-size: 130px;
 background-position: 12px;
 
+}
+
+/* DARK MODE FIX */
+
+/* top menu do dark */
+body.theme-dark .uk-navbar-container.navbar, body.theme-dark #app nav.uk-navbar {
+    background-color: #252525 !important;
+}
+/* background color to dark */
+body.theme-dark {
+    background-color: #121212 !important;
+    color: #abc;
+}
+/* notification */
+body.theme-dark .uk-notification .uk-notification-message {
+    background-color: #010101 !important
+}
+
+body.theme-dark #scrollTopBtn {
+    border: 1px solid #575a5d !important;
+    background: #2f3031 !important;
+}
+/* dodaj ikona */
+body.theme-dark [uk-icon=plus-circle] {
+    color: white !important;
+}
+body.theme-dark button.open-editor {
+    background-color: #171515 !important;
+    border-color: #3a3d40  !important 
+}
+body.theme-dark  .tdn.username b {
+        color: #999 !important
+}
+
+body.theme-dark img.miniature {
+    filter: grayscale(1);
+}
+body.theme-dark #app .post-content .uk-margin-top img {
+  filter: grayscale(1);  
+}
+body.theme-dark #app .post-content img.avatar {
+   filter: grayscale(1);  
+}
+
+body.theme-dark #app .uk-container-xlarge .uk-width-xxlarge .uk-grid-collapse.uk-flex-stretch.uk-flex-center {
+    filter: grayscale(1) !important;
+}
+
+body.theme-dark [href="/#napisz"] {
+   color: #655d5d !important;
+}
+body.theme-dark a.interactive {
+    color: #6390bd;
+}
+body.theme-dark .post-body a {
+  color: #6390bd; 
 }
 
 }
