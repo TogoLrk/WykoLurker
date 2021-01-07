@@ -1,0 +1,22 @@
+/* ==UserStyle==
+@name Remove Wykop Ban Popup
+@namespace github.com/Usernameisalreadytaken5/WykoLurker
+@homepageURL https://github.com/Usernameisalreadytaken5/WykoLurker
+@version 0.0.3
+@updateURL https://raw.githubusercontent.com/Usernameisalreadytaken5/WykoLurker/main/WykopBanFixPopup.user.css
+@description Remove Wykop Ban Popup
+@author THE://
+@license MIT
+==/UserStyle== */
+
+                                                                                                                       
+                                                                                                                       
+@-moz-document domain("wykop.pl") {
+  .type-permanent + .type-permanent, .type-permanent + #nav {
+      top: 0 !important;
+  }
+
+  .type-permanent + #nav + div {
+      padding-top: 60px !important;
+  }
+}
