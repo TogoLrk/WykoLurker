@@ -2,7 +2,7 @@
 @name Google Search back to old 2019
 @namespace github.com/Usernameisalreadytaken5/WykoLurker
 @homepageURL https://github.com/Usernameisalreadytaken5/WykoLurker
-@version 0.0.5
+@version 0.0.6
 @updateURL https://raw.githubusercontent.com/Usernameisalreadytaken5/WykoLurker/main/OldSearchGog.user.css
 @description Old Gog Search
 @author THE://
@@ -11,7 +11,7 @@
 
                                                                                                                        
                                                                                                                        
-@-moz-document domain("www.google.com"),domain("www.google.pl"),domain("google.com") {
+@-moz-document url-prefix("https://google."),url-prefix("https://www.google.") {
   #searchform form div.logo + div[jsname][class] {
       background: #fff;
     display: flex;
