@@ -2,7 +2,7 @@
 @name WykoLurker
 @namespace github.com/Usernameisalreadytaken5/WykoLurker
 @homepageURL https://github.com/Usernameisalreadytaken5/WykoLurker
-@version 0.0.4
+@version 0.0.5
 @updateURL https://raw.githubusercontent.com/Usernameisalreadytaken5/WykoLurker/main/WykoLurkerpp.user.css
 @description WykoLurker zmiana stylu na bardziej kompaktowy
 @author THE://
@@ -271,6 +271,7 @@ body.theme-dark  .tdn.username b {
         color: #999 !important
 }
 
+/* greyscale images remove
 body.theme-dark img.miniature {
     filter: grayscale(1);
 }
@@ -279,7 +280,7 @@ body.theme-dark #app .post-content .uk-margin-top img {
 }
 body.theme-dark #app .post-content img.avatar {
    filter: grayscale(1);  
-}
+}*/
 
 body.theme-dark #app .uk-container-xlarge .uk-width-xxlarge .uk-grid-collapse.uk-flex-stretch.uk-flex-center {
     filter: grayscale(1) !important;
@@ -294,7 +295,7 @@ body.theme-dark a.interactive {
 body.theme-dark .post-body a {
   color: #6390bd; 
 }
- body.theme-dark .uk-navbar-container .uk-navbar-right .dropdown li a {
+body.theme-dark .uk-navbar-container .uk-navbar-right .dropdown li a {
   color: #ccc !important;
 }
 body.theme-dark .uk-navbar-container .uk-navbar-right .dropdown li a:hover {
