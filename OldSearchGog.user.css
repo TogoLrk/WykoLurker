@@ -11,7 +11,7 @@
 
                                                                                                                        
                                                                                                                        
-@-moz-document domain("www.google.com") {
+@-moz-document domain("www.google.com"),domain("www.google.pl"),domain("google.com"),url-prefix("https://google.") {
   #searchform form div.logo + div[jsname][class] {
       background: #fff;
     display: flex;
