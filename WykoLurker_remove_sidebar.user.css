@@ -2,7 +2,7 @@
 @name Lurker Wywala Sidebara
 @namespace github.com/Usernameisalreadytaken5/WykoLurker
 @homepageURL https://github.com/Usernameisalreadytaken5/WykoLurker
-@version 0.0.3
+@version 0.0.4
 @updateURL https://raw.githubusercontent.com/Usernameisalreadytaken5/WykoLurker/main/WykoLurker_remove_sidebar.user.css
 @description WykoLurker wywala sidebara
 @author THE://
@@ -33,13 +33,13 @@
                                                                                                                        
 @-moz-document domain("www.lurker.pl") {
   /* ukrywa sidebara */
-  .uk-container-xlarge .uk-flex-center .sticky.uk-flex-first {
-      display: none                                   
+  nav.menu {
+    display: none                                   
   }
 
   /* treśc była 750x dałem na 1000px */
   .uk-width-xxlarge {
-      width: 870px !important
+      width: 1000px !important
   }
 
 }
