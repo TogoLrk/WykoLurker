@@ -2,7 +2,7 @@
 @name Lurker Wywala Sidebara
 @namespace github.com/Usernameisalreadytaken5/WykoLurker
 @homepageURL https://github.com/Usernameisalreadytaken5/WykoLurker
-@version 0.0.4
+@version 0.0.5
 @updateURL https://raw.githubusercontent.com/Usernameisalreadytaken5/WykoLurker/main/WykoLurker_remove_sidebar.user.css
 @description WykoLurker wywala sidebara
 @author THE://
@@ -34,6 +34,10 @@
 @-moz-document domain("www.lurker.pl") {
   /* ukrywa sidebara */
   nav.menu {
+    display: none                                   
+  }
+
+  .uk-container-xlarge .uk-flex-center .sticky.uk-flex-first {
     display: none                                   
   }
 
