@@ -1,0 +1,23 @@
+/* ==UserStyle==
+@name WykoLurker Remove LinksBOX
+@namespace github.com/Usernameisalreadytaken5/WykoLurker
+@homepageURL https://github.com/Usernameisalreadytaken5/WykoLurker
+@version 0.0.1
+@updateURL https://raw.githubusercontent.com/Usernameisalreadytaken5/WykoLurker/main/WykoLurkerp_removeLINKSBOX.user.css
+@description WykoLurker zmiana stylu na bardziej kompaktowy
+@author THE://
+@license MIT
+==/UserStyle== */
+                                                                                                                         
+                                                                                                                       
+@-moz-document domain("www.lurker.pl") {
+  /* usówa linki z posta po co do cholery linki która są jescze raz w treści */
+
+  .post-body ~ div.uk-margin > a {
+    display: none !important
+  }
+
+  article.post-body + div.uk-margin a.tdn.card-link.uk-grid {
+    display: none !important   
+  }
+}
