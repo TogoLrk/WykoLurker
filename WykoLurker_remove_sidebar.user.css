@@ -2,7 +2,7 @@
 @name Lurker Wywala Sidebara
 @namespace github.com/Usernameisalreadytaken5/WykoLurker
 @homepageURL https://github.com/Usernameisalreadytaken5/WykoLurker
-@version 0.0.5
+@version 0.0.6
 @updateURL https://raw.githubusercontent.com/Usernameisalreadytaken5/WykoLurker/main/WykoLurker_remove_sidebar.user.css
 @description WykoLurker wywala sidebara
 @author THE://
@@ -42,7 +42,7 @@
   }
 
   /* treśc była 750x dałem na 1000px */
-  .uk-width-xxlarge {
+  #mainModal.uk-width-xxlarge {
       width: 1000px !important
   }
 
