@@ -2,7 +2,7 @@
 @name WykoLurker
 @namespace github.com/Usernameisalreadytaken5/WykoLurker
 @homepageURL https://github.com/Usernameisalreadytaken5/WykoLurker
-@version 0.0.5
+@version 0.0.6
 @updateURL https://raw.githubusercontent.com/Usernameisalreadytaken5/WykoLurker/main/WykoLurkerpp.user.css
 @description WykoLurker zmiana stylu na bardziej kompaktowy
 @author THE://
@@ -158,6 +158,11 @@ bo nie ma jak dostać się do np. opcji moderacji dostaje komunikat i nie wiem o
   max-width: 280px !important   
 }
 
+/* miniaturka linka pod komentarzem */    
+#app a.tdn .uk-flex-stretch { width: 100px !important; }
+#app a.tdn .uk-flex-stretch  img.thumbnail { width: 100px !important; }
+
+
 /* hack bo sie zdjęcia pierdolą nie ma to jak dynamiczne selecotry */
 #app .post-content img.avatar {
   max-width: 36px !important   
@@ -194,10 +199,6 @@ bo nie ma jak dostać się do np. opcji moderacji dostaje komunikat i nie wiem o
     opacity: 1 !important
 }
 
-/* usówa linki z posta po co do cholery linki która są jescze raz w treści */
-article.post-body + div.uk-margin a.tdn.card-link.uk-grid {
-  display: none !important   
-}
 
 /* RESET OKROPNEGO SCROLLBARA DLA CHROME */
 
