@@ -1,8 +1,8 @@
-/* ==UserStyle==
+/*==UserStyle==
 @name WykoLurker
 @namespace github.com/Usernameisalreadytaken5/WykoLurker
 @homepageURL https://github.com/Usernameisalreadytaken5/WykoLurker
-@version 0.0.6
+@version 0.0.7
 @updateURL https://raw.githubusercontent.com/Usernameisalreadytaken5/WykoLurker/main/WykoLurkerpp.user.css
 @description WykoLurker zmiana stylu na bardziej kompaktowy
 @author THE://
@@ -56,7 +56,7 @@ html {
 
 /* Jak mnie wkurwiają te pierdolnięte notyfikację które zasłaniają mi treśc */
 .uk-notification {
-  right: -139px !important;
+    right: -85px !important;
     top: 13px  !important;
     border-radius: 2px !important;
 }
@@ -64,7 +64,7 @@ html {
     padding: 5px;
     background-color: #2c6db0;
     color: #f5f5f5;
-    width: 204px;
+    width: 275px;
     font-size: 13px !important;
 }
 
@@ -96,7 +96,7 @@ html {
 
 /* NAVIGACJA */
 #app .uk-container-xlarge .uk-width-xxlarge .uk-grid-collapse.uk-flex-stretch.uk-flex-center {
-  position: fixed;
+    position: fixed;
     top:12px;
     z-index: 100;
     left: 173px;                                        
@@ -136,6 +136,10 @@ bo nie ma jak dostać się do np. opcji moderacji dostaje komunikat i nie wiem o
 }
 
 /* News page */
+    
+#app .post-content h3 {
+    font-size: 16px;
+}
 
 /* wielkosc kontenera newsowego */
 #app .miniature + div {
@@ -175,18 +179,32 @@ bo nie ma jak dostać się do np. opcji moderacji dostaje komunikat i nie wiem o
 }
 
 #mainModal {
-  /*left: 0 !important ;*/ /* pelnyekran */
-    top: 64px;
-    left: 480px !important;
+    top: 65px;
+    left: -1px !important;
+    width: 890px;
+    margin: 0 auto;
 }
 #mainModal + div div.uk-grid.uk-padding {
   max-width: 443px
+}
+    
+/* Main modal back icon */
+#mainModal .modal-close.svelte-1cu4suo svg {
+    transform: rotate(180deg);
+}
+    
+/* Pełny ekran main modal */
+#mainModal .uk-width-xxlarge {
+    /*width: 100%*/
+}
+#mainModal + .uk-container-xlarge {
+    visibility: hidden;;
 }
 
 /* stylowanie grafiki gdy jest na pełnym ekranie */
 
 #mainModal + div .miniature {
-        max-width: 100px;
+   max-width: 100px;
 }
 #mainModal + div .miniature img {
   height: initial !important ;
@@ -199,33 +217,28 @@ bo nie ma jak dostać się do np. opcji moderacji dostaje komunikat i nie wiem o
     opacity: 1 !important
 }
 
+/* modal powrót */
+.modal-topbar.svelte-1cu4suo {
+  width: 73px;
+  z-index: 18;
+  height: 64px;
+  border-bottom: none;
+  background-color: transparent !important;
+  top: 65px;
+  position: fixed;
+  left: 2px;  
+}
+nav.uk-navbar {
+        
+}
+
 
 /* RESET OKROPNEGO SCROLLBARA DLA CHROME */
-
-/*Scroll bar nav
+    
 ::-webkit-scrollbar {
-    width: auto;
+    width: 17px !important;
 }
 
-
-::-webkit-scrollbar-thumb {
-    -webkit-border-radius: initial !important;
-    border-radius:  initial !important;
-    background:  initial !important;
-    -webkit-box-shadow: initial !important;
-    box-shadow: initial !important;
-}
-
-::-webkit-scrollbar-thumb:window-inactive {
-    background: initial !important;
-}
-
-::-webkit-scrollbar-track {
-   -webkit-box-shadow: 0;
-    box-shadow: 0;
-    -webkit-border-radius: 0;
-    border-radius: 0;
-}*/
 
 /* zmiana loga */
 .uk-navbar-container .uk-navbar-left  li img[alt="Logo Lurker.pl"] {
