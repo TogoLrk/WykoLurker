@@ -2,7 +2,7 @@
 @name WykoLurker
 @namespace github.com/Usernameisalreadytaken5/WykoLurker
 @homepageURL https://github.com/Usernameisalreadytaken5/WykoLurker
-@version 0.0.7
+@version 0.0.8
 @updateURL https://raw.githubusercontent.com/Usernameisalreadytaken5/WykoLurker/main/WykoLurkerpp.user.css
 @description WykoLurker zmiana stylu na bardziej kompaktowy
 @author THE://
@@ -174,15 +174,22 @@ bo nie ma jak dostać się do np. opcji moderacji dostaje komunikat i nie wiem o
 
 /* czytanie artykułu */
 #mainModal {
-    transition: none !important;
-    max-width: initial !important;
+  transition: none !important;
+  max-width: initial !important;
+}
+
+/* Fix for close modal visibility issue */
+#mainModal:not(.modal-visible){
+  visibility: hidden !important;
+  z-index: -1 !important;
+  display: none !important;
 }
 
 #mainModal {
-    top: 65px;
-    left: -1px !important;
-    width: 890px;
-    margin: 0 auto;
+  top: 65px;
+  left: -1px !important;
+  width: 890px;
+  margin: 0 auto;
 }
 #mainModal + div div.uk-grid.uk-padding {
   max-width: 443px
